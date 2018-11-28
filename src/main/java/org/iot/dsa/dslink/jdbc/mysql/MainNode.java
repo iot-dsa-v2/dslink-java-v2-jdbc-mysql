@@ -1,4 +1,4 @@
-package org.iot.dsa.dslink.jdbc.postgres;
+package org.iot.dsa.dslink.jdbc.mysql;
 
 import org.iot.dsa.dslink.jdbc.C3P0PooledDBConnectionNode;
 import org.iot.dsa.dslink.jdbc.JDBCv2Helpers;
@@ -31,11 +31,11 @@ public class MainNode extends org.iot.dsa.dslink.jdbc.MainNode {
 	
 	@Override
 	protected String getHelpUrl() {
-		return "https://github.com/iot-dsa-v2/dslink-java-v2-jdbc-postgres";
+		return "https://github.com/iot-dsa-v2/dslink-java-v2-jdbc-mysql";
 	}
 	
 	private ActionResult addNewDatabase(DSMap parameters) {
-		parameters.put(JDBCv2Helpers.DRIVER, DSElement.make("org.postgresql.Driver"));
+		parameters.put(JDBCv2Helpers.DRIVER, DSElement.make("com.mysql.cj.jdbc.Driver"));
         DSNode nextDB = new C3P0PooledDBConnectionNode(parameters);
         add(parameters.getString(JDBCv2Helpers.DB_NAME), nextDB);
         return null;

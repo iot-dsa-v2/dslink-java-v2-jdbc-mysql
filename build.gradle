@@ -27,9 +27,8 @@ repositories {
 dependencies {
     implementation 'com.github.iot-dsa-v2.sdk-dslink-java-v2:dslink-v2-websocket:v0.47.0'
     //implementation 'org.iot-dsa:dslink-v2-websocket:+' //for a locally installed sdk
-    //implementation 'com.mchange:c3p0:+'
     implementation 'com.github.iot-dsa-v2:dslink-java-v2-jdbc:3c8ed0928b'
-    implementation 'org.postgresql:postgresql:+'
+    implementation 'mysql:mysql-connector-java:+'
 }
 
 applicationDistribution.from(new File(project.projectDir, "/dslink.json"))

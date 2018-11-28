@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'dslink-java-v2-jdbc-postgres'
+rootProject.name = 'dslink-java-v2-jdbc-mysql'

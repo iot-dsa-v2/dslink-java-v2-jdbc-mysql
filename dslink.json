@@ -1,12 +1,12 @@
 {
-  "name": "dslink-java-v2-jdbc-postgres",
+  "name": "dslink-java-v2-jdbc-mysql",
   "version": "1.3.5",
   "description": "Database link for JDBC databases",
-  "main": "bin/dslink-java-v2-jdbc-postgres",
+  "main": "bin/dslink-java-v2-jdbc-mysql",
   "configs": {
     "main-node": {
       "type": "string",
-      "value": "org.iot.dsa.dslink.jdbc.postgres.MainNode"
+      "value": "org.iot.dsa.dslink.jdbc.postgres.mysql.MainNode"
     }
   }
 }
