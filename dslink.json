@@ -6,7 +6,7 @@
   "configs": {
     "main-node": {
       "type": "string",
-      "value": "org.iot.dsa.dslink.jdbc.postgres.mysql.MainNode"
+      "value": "org.iot.dsa.dslink.jdbc.mysql.MainNode"
     }
   }
 }
