@@ -1,7 +1,7 @@
 package org.iot.dsa.dslink.jdbc.mysql;
 
 import org.iot.dsa.dslink.jdbc.AbstractMainNode;
-import org.iot.dsa.dslink.jdbc.C3P0PooledDBConnectionNode;
+import org.iot.dsa.dslink.jdbc.JDBCPooledNode;
 import org.iot.dsa.dslink.jdbc.JDBCv2Helpers;
 import org.iot.dsa.node.DSElement;
 import org.iot.dsa.node.DSInfo;
@@ -37,7 +37,7 @@ public class MainNode extends AbstractMainNode {
 	
 	private ActionResult addNewDatabase(DSMap parameters) {
 		parameters.put(JDBCv2Helpers.DRIVER, DSElement.make("com.mysql.cj.jdbc.Driver"));
-        DSNode nextDB = new C3P0PooledDBConnectionNode(parameters);
+        DSNode nextDB = new JDBCPooledNode(parameters);
         add(parameters.getString(JDBCv2Helpers.DB_NAME), nextDB);
         return null;
     }
