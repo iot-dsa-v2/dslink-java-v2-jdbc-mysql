@@ -32,8 +32,8 @@ jar {
 }
 
 dependencies {
-    implementation 'org.iot-dsa:dslink-java-v2-jdbc:+' //for a locally installed sdk
-    //implementation 'com.github.iot-dsa-v2:dslink-java-v2-jdbc:v+'
+    //implementation 'org.iot-dsa:dslink-java-v2-jdbc:+' //for a locally installed sdk
+    implementation 'com.github.iot-dsa-v2:dslink-java-v2-jdbc:v+'
     implementation 'mysql:mysql-connector-java:+'
 }
 
