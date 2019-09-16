@@ -1,6 +1,6 @@
 {
   "name": "dslink-java-v2-jdbc-mysql",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Database link for MySQL databases",
   "main": "bin/dslink-java-v2-jdbc-mysql",
   "configs": {
